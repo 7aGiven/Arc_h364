@@ -118,13 +118,13 @@ void sign(char *body, char *endpoint) {
 }
 
 int main() {
-	char localPrefix[] = "/";
+	char localPrefix[] = "/hanami/29";
 	strcpy(prefix, localPrefix);
 	char localSalt[] = {};
 	memcpy(salt, localSalt, 32);
 	char endpoint[256];
-	strcpy(endpoint, "/sdfh/28/auth/login");
-	sign("grant_t", endpoint);
+	strcpy(endpoint, "/auth/login");
+	sign("grant_type=client_credentials", endpoint);
 	printf("%s\n", endpoint);
 	
 }
