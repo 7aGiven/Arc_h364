@@ -1,8 +1,4 @@
 #include <chrono>
-#include <mutex>
-#include <queue>
-#include <thread>
-#include <cstdio>
 
 extern "C" {
     uint64_t getTimestamp() {
